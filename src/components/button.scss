@@ -1,0 +1,33 @@
+$blue: dodgerblue;
+
+.Button {
+    display: inline-flex;
+    all: unset;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: $blue;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+        background-color: lighten($blue, 10);
+    }
+    &:active {
+        background-color: darken($blue, 10);
+    }
+
+    &.large {
+        font-size: 25px;
+        height: 70px;
+    }
+
+    &.small {
+        font-size: 12px;
+        height: 30px;
+    }
+}
